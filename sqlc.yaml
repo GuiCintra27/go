@@ -1,3 +1,4 @@
+#Is necessary to install sqlc (https://docs.sqlc.dev/en/stable/overview/install.html)
 version: "2"
 sql:
 - engine: "mysql"
