@@ -1,13 +1,23 @@
-FROM golang:1.20 as builder
+#GO WITH DOCKER >>>
 
-WORKDIR /app
+# FROM golang:1.20 as builder
 
-COPY /deploy .
+# WORKDIR /app
 
-RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o server
+# COPY /deploy .
 
-FROM scratch
+# RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o server
 
-COPY --from=builder /app/server /server
+# FROM scratch
 
-ENTRYPOINT [ "/server" ]
+# COPY --from=builder /app/server /server
+
+# ENTRYPOINT [ "/server" ]
+
+FROM golang:latest
+
+WORKDIR /go/app
+
+RUN apt-get update && apt-get install -y librdkafka-dev
+
+CMD ["tail", "-f", "/dev/null"]

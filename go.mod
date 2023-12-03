@@ -1,7 +1,12 @@
 module github.com/GuiCintra27/go
 
-go 1.20
+go 1.21.4
 
 require golang.org/x/exp v0.0.0-20231127185646-65229373498e
 
-require github.com/google/uuid v1.4.0
+require (
+	github.com/confluentinc/confluent-kafka-go v1.9.2
+	github.com/go-chi/chi/v5 v5.0.10
+	github.com/go-sql-driver/mysql v1.7.1
+	github.com/google/uuid v1.4.0
+)
