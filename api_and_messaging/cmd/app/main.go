@@ -19,7 +19,9 @@ import (
 // To run the application:
 // run docker-compose up
 // run docker-compose mysql bash and create a new products database and table
+// example (mysql -uroot -p products and create table products (id varchar(255), name varchar(255), price float))
 // run docker-compose kafka bash and create a new product topic
+// example (kafka-topics --bootstrap-server=localhost:9092 --topic=product --create)
 // run docker-compose goapp bash (maybe you need to go to src folder - [cd ../src/api_and_messaging])
 // run go run cmd/app/main.go
 // make a http request to http://localhost:8000/products (example in request_example.http file), or insert a new item in product topic in kafka
