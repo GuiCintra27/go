@@ -2,6 +2,8 @@ package main
 
 import (
 	"context"
+	"flag"
+	"fmt"
 	"log"
 
 	"github.com/GuiCintra27/go/user_grpc_platform_project/framework/pb"
@@ -10,7 +12,14 @@ import (
 )
 
 func main()  {
-	connection, err := grpc.Dial("localhost:50051", grpc.WithTransportCredentials(insecure.NewCredentials()))
+	port := flag.Int("port", 0, "Insert the server port")
+
+	flag.Parse()
+	log.Printf("Making request on port %d\n", *port)	
+
+	address := fmt.Sprintf("localhost:%d", *port)
+
+	connection, err := grpc.Dial(address, grpc.WithTransportCredentials(insecure.NewCredentials()))
 
 	if err != nil {
 		log.Fatalf("Could not connect: %v", err)
@@ -26,7 +35,7 @@ func main()  {
 func CreateUser(client pb.UserServiceClient) {
 	request := &pb.UserRequest{
 		Name: "John",
-		Email: "jdoe@me.com",
+		Email: "jdoec@me.com",
 		Password: "123456",
 	}
 
