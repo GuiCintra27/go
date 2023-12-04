@@ -3,7 +3,7 @@ package repository
 import (
 	"database/sql"
 
-	"github.com/GuiCintra27/go/api_and_messaging/internal/entity"
+	"github.com/GuiCintra27/go/api_and_messaging_project/internal/entity"
 )
 
 type ProductRepositoryMySQL struct {

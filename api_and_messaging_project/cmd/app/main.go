@@ -8,10 +8,10 @@ import (
 
 	_ "github.com/go-sql-driver/mysql"
 
-	"github.com/GuiCintra27/go/api_and_messaging/internal/infra/akafka"
-	"github.com/GuiCintra27/go/api_and_messaging/internal/infra/repository"
-	"github.com/GuiCintra27/go/api_and_messaging/internal/infra/web"
-	"github.com/GuiCintra27/go/api_and_messaging/internal/usecase"
+	"github.com/GuiCintra27/go/api_and_messaging_project/internal/infra/akafka"
+	"github.com/GuiCintra27/go/api_and_messaging_project/internal/infra/repository"
+	"github.com/GuiCintra27/go/api_and_messaging_project/internal/infra/web"
+	"github.com/GuiCintra27/go/api_and_messaging_project/internal/usecase"
 	"github.com/confluentinc/confluent-kafka-go/kafka"
 	"github.com/go-chi/chi/v5"
 )
@@ -22,7 +22,7 @@ import (
 // example (mysql -uroot -p products and create table products (id varchar(255), name varchar(255), price float))
 // run docker-compose kafka bash and create a new product topic
 // example (kafka-topics --bootstrap-server=localhost:9092 --topic=product --create)
-// run docker-compose goapp bash (maybe you need to go to src folder - [cd ../src/api_and_messaging])
+// run docker-compose goapp bash (maybe you need to go to src folder - [cd ../src/api_and_messaging_project])
 // run go run cmd/app/main.go
 // make a http request to http://localhost:8000/products (example in request_example.http file), or insert a new item in product topic in kafka
 

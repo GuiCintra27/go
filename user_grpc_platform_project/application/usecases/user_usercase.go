@@ -3,8 +3,8 @@ package usecases
 import (
 	"log"
 
-	"github.com/GuiCintra27/go/user_grpc_platform/application/repositories"
-	"github.com/GuiCintra27/go/user_grpc_platform/domain"
+	"github.com/GuiCintra27/go/user_grpc_platform_project/application/repositories"
+	"github.com/GuiCintra27/go/user_grpc_platform_project/domain"
 )
 
 type UserUsecase struct {

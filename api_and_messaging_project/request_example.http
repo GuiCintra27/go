@@ -1,4 +1,4 @@
-## http test for api_and_messaging
+## http test for api_and_messaging_project
 
 POST http://localhost:8000/products
 Content-Type: application/json

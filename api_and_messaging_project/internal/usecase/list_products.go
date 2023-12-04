@@ -1,6 +1,6 @@
 package usecase
 
-import "github.com/GuiCintra27/go/api_and_messaging/internal/entity"
+import "github.com/GuiCintra27/go/api_and_messaging_project/internal/entity"
 
 type ListProductsOutputDTO struct {
 	Id string

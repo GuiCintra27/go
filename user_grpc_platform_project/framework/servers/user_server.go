@@ -4,9 +4,9 @@ import (
 	"context"
 	"log"
 
-	"github.com/GuiCintra27/go/user_grpc_platform/application/usecases"
-	"github.com/GuiCintra27/go/user_grpc_platform/domain"
-	"github.com/GuiCintra27/go/user_grpc_platform/framework/pb"
+	"github.com/GuiCintra27/go/user_grpc_platform_project/application/usecases"
+	"github.com/GuiCintra27/go/user_grpc_platform_project/domain"
+	"github.com/GuiCintra27/go/user_grpc_platform_project/framework/pb"
 )
 
 type UserServer struct {

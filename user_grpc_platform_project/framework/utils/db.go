@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/GuiCintra27/go/user_grpc_platform/domain"
+	"github.com/GuiCintra27/go/user_grpc_platform_project/domain"
 	"github.com/jinzhu/gorm"
 	"github.com/joho/godotenv"
 
