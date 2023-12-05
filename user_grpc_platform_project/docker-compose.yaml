@@ -9,6 +9,6 @@ services:
       - .pgdata:/var/lib/postgresql/data
     environment:
       - POSTGRES_PASSWORD=root
-      - POSTGRES_DB=codeedu
+      - POSTGRES_DB=go_platform
     ports:
       - 5435:5432
