@@ -21,4 +21,4 @@ if the request is successfull you should see something like
   token: ${user token}
 ```
 
-*** make sure to change the email (in client file) everytime make a request
+*** make sure to change the email (in client file) everytime you make a request
