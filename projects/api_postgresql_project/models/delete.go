@@ -1,0 +1,20 @@
+package models
+
+import "github.com/GuiCintra27/go/projects/api_postgresql_project/db"
+
+func Delete(id int64) (int64, error) {
+	conn, err := db.Connect()
+
+	if err != nil {
+		return 0, err
+	}
+	defer conn.Close()
+
+	res, err := conn.Exec("DELETE FROM todos WHERE id = $1", id)
+
+	if err != nil {
+		return 0, err
+	}
+
+	return res.RowsAffected()
+}
