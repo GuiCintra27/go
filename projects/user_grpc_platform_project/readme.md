@@ -1,3 +1,7 @@
+###Objective of the project
+
+This project aims to train my knowledge about different API communication protocols using gRPC for faster and lighter communication
+
 run postgres server with docker
 
 ```docker-compose up``` 

@@ -1,3 +1,7 @@
+###Objective of the project
+
+The project aims to create a isolated enviroment training my docker concepts, and integrate golang with a SQL database (MySQL) and Apache Kafka for collect, monitor and store streaming event data.
+
 To run the application:
 ```
   docker-compose up
