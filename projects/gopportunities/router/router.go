@@ -16,6 +16,10 @@ func Init() {
 
 	port := os.Getenv("PORT")
 
+	if port == "" {
+		port = "8080"
+	}
+
 	router := gin.Default()
 	
 	initializeRoutes(router)
