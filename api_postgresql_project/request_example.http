@@ -1,0 +1,33 @@
+## http test for api_postgresql_project
+
+POST http://localhost:9000
+Content-Type: application/json
+
+{
+  "title": "title",
+  "description": "description here",
+  "done": false
+}
+
+OR 
+
+{
+  "title": "title",
+  "description": "description here"
+}
+
+GET http://localhost:9000
+Content-Type: application/json
+
+GET http://localhost:9000/{id}
+Content-Type: application/json
+
+PUT http://localhost:9000/{id}
+Content-Type: application/json
+
+{
+  "done": true
+}
+
+DELETE http://localhost:9000/{id}
+Content-Type: application/json
