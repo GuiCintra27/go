@@ -1,6 +1,6 @@
 ###Objective of the project
 
-This project aims to train my knowledge about different API communication protocols using gRPC for faster and lighter communication
+This project aims to train my knowledge about different API communication protocols using gRPC for faster and lighter communication, uses goORM to access database and goDotEnv to load env files
 
 run postgres server with docker
 
