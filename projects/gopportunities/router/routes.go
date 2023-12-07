@@ -9,13 +9,13 @@ import (
 )
 
 func initializeRoutes(router *gin.Engine) {
-	basepath := "/api/v1"
-
 	handler.InitializeHandler()
 
-	docs.SwaggerInfo.BasePath = basepath
+	basePath := "/api/v1"
+
+	docs.SwaggerInfo.BasePath = basePath
 	
-	v1 := router.Group(basepath)
+	v1 := router.Group(basePath)
 	{		
 		v1.GET("/openings", handler.ListOpeningsHandler)
 		v1.GET("/opening", handler.ShowOpeningHandler)
@@ -23,7 +23,6 @@ func initializeRoutes(router *gin.Engine) {
 		v1.PUT("/opening", handler.UpdateOpeningHandler)
 		v1.DELETE("/opening", handler.DeleteOpeningHandler)
 	}
-
 
 	router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerfiles.Handler))
 }
