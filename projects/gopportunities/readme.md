@@ -1,4 +1,4 @@
-# GoJob Opportunities API 
+# GoJob Opportunities API 🇱🇷 - (Go to Brazilian version 🇧🇷)[https://github.com/GuiCintra27/go/blob/main/projects/gopportunities/readme-pt.md]
 
 <p align="center">
   <img src="./assets/GopportunitiesHeader.svg" alt="GoJob Header">
@@ -35,7 +35,6 @@ The project includes a Makefile to help you manage common tasks more easily. Her
 - `make run`: Run the application without generating API documentation.
 - `make run-with-docs`: Generate the API documentation using Swag, then run the application.
 - `make build`: Build the application and create an executable file named `gopportunities`.
-- `make test`: Run tests for all packages in the project.
 - `make docs`: Generate the API documentation using Swag.
 - `make clean`: Remove the `gopportunities` executable and delete the `./docs` directory.
 
