@@ -1,4 +1,4 @@
-# GoJob Opportunities API 🇱🇷 - (Go to Brazilian version 🇧🇷)[https://github.com/GuiCintra27/go/blob/main/projects/gopportunities/readme-pt.md]
+# GoJob Opportunities API 🇱🇷 - [(Go to Brazilian version 🇧🇷)](https://github.com/GuiCintra27/go/blob/main/projects/gopportunities/readme-pt.md)
 
 <p align="center">
   <img src="./assets/GopportunitiesHeader.svg" alt="GoJob Header">
