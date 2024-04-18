@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"github.com/GuiCintra27/go/topics/read_file/utils"
+	"github.com/GuiCintra27/go/topics/read_and_create_file/utils"
 )
 
 func main() {

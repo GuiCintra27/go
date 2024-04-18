@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/GuiCintra27/go/topics/read_file/config"
+	"github.com/GuiCintra27/go/topics/read_and_create_file/config"
 )
 
 type Result struct {

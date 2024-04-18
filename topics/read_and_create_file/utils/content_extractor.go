@@ -3,11 +3,11 @@ package utils
 import (
 	"os"
 
-	"github.com/GuiCintra27/go/topics/read_file/config"
+	"github.com/GuiCintra27/go/topics/read_and_create_file/config"
 )
 
 func ContentExtractor(sourceFile string) ([]byte, error) {
-	logger := config.GetLogger("main")
+	logger := config.GetLogger("utils.ContentExtractor")
 
 	//check if the source file exists
 	_, err := os.Stat(sourceFile)
